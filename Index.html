@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6d819e768f.js" crossorigin="anonymous"></script>
+    <title>ideamagix test</title>
+</head>
+
+<body>
+    <div class="fullpage">
+        <header>
+            <div class="aafiyaheader">
+                <div class="aafiyaheaderlogo">
+                    <img src="https://images.thecompanycheck.com/companylogo/AAFIYA_MEDIRETREATS_PRIVATE_LIMITED_435194.webp"
+                        alt="">
+                </div>
+                <div class="aafiyaheaderimage">
+                    <img src="data:image/png;base64,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"
+                        alt="">
+                </div>
+                <div class="aafiyaheaderconsultation">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#000000"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M232,168h-8V72a24,24,0,0,0-24-24H56A24,24,0,0,0,32,72v96H24a8,8,0,0,0-8,8v16a24,24,0,0,0,24,24H216a24,24,0,0,0,24-24V176A8,8,0,0,0,232,168ZM48,72a8,8,0,0,1,8-8H200a8,8,0,0,1,8,8v96H48ZM224,192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8v-8H224ZM152,88a8,8,0,0,1-8,8H112a8,8,0,0,1,0-16h32A8,8,0,0,1,152,88Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="socialmedical">Second Medical Opinion</li>
+                            <li class="bookconsultation">Book Consultation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="aafiyaheadercontact">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#000000"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M152.27,37.93a8,8,0,0,1,9.8-5.66,86.22,86.22,0,0,1,61.66,61.66,8,8,0,0,1-5.66,9.8A8.23,8.23,0,0,1,216,104a8,8,0,0,1-7.73-5.94,70.35,70.35,0,0,0-50.33-50.33A8,8,0,0,1,152.27,37.93Zm-2.33,41.8c13.79,3.68,22.65,12.54,26.33,26.33A8,8,0,0,0,184,112a8.23,8.23,0,0,0,2.07-.27,8,8,0,0,0,5.66-9.8c-5.12-19.16-18.5-32.54-37.66-37.66a8,8,0,1,0-4.13,15.46Zm81.94,95.35A56.26,56.26,0,0,1,176,224C96.6,224,32,159.4,32,80A56.26,56.26,0,0,1,80.92,24.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,117.39,96c-.18.27-.37.52-.57.77L96,121.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,231.88,175.08Zm-15.88-2s-.07,0-.11,0h0l-47-21.05-24.35,20.71a8.44,8.44,0,0,1-.74.56,16,16,0,0,1-15.75,1.14c-18.73-9.05-37.4-27.58-46.46-46.11a16,16,0,0,1,1-15.7,6.13,6.13,0,0,1,.57-.77L104,87.15l-21-47a.61.61,0,0,1,0-.12A40.2,40.2,0,0,0,48,80,128.14,128.14,0,0,0,176,208,40.21,40.21,0,0,0,216,173.07Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="socialmedical">Call Us On</li>
+                            <li class="bookconsultation">985 896 2222</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="aafiyaheaderemail">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#000000"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M228.44,89.34l-96-64a8,8,0,0,0-8.88,0l-96,64A8,8,0,0,0,24,96V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V96A8,8,0,0,0,228.44,89.34ZM96.72,152,40,192V111.53Zm16.37,8h29.82l56.63,40H56.46Zm46.19-8L216,111.53V192ZM128,41.61l81.91,54.61-67,47.78H113.11l-67-47.78Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="socialmedical">Email Us On</li>
+                            <li class="bookconsultation">info@mediretreats.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="navbar">
+                <div class="navbarleftside">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Treatment<span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </span></a></li>
+                        <li><a href="#">Destination <span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </span></a></li>
+                        <li><a href="#">Hospitals</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Request A Quote</a></li>
+                    </ul>
+                </div>
+                <div class="navbarrightside">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#ffffff" viewBox="0 0 256 256">
+                        <path
+                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                        </path>
+                    </svg>
+                    <input type="text" placeholder="Search">
+                </div>
+
+            </div>
+        </nav>
+
+        <main class="bannerpage">
+            <div class="bannersection">
+                <div class="bannerlist">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <i style="margin-left: 2%; color: red; margin-top: 1%;" class="fa-solid fa-chevron-right"></i>
+                        <li class="list"><a href="">Treatment</a></li>
+                        <i style="margin-left: 2%; color: red; margin-top: 1%;" class="fa-solid fa-chevron-right"></i>
+                        <li class="list"><a href="">Orthopaedics</a></li>
+                        <i style="margin-left: 2%; color: red; margin-top: 1%;" class="fa-solid fa-chevron-right"></i>
+                        <li class="list"><a href="">Knee Replacement</a></li>
+                    </ul>
+                </div>
+                <div class="bannerheading">
+                    <h1>Total Knee Replacement</h1>
+                    <p>Total knee Replacement is a surgery to remove and replace the whole damaged knee joint with an
+                        artifical joint.</p>
+                </div>
+                <button>Enquire Now</button>
+            </div>
+        </main>
+
+        <main class="articlesection">
+            <div class="article">
+                <ul>
+                    <li><a href="">Overview</a></li>
+                    <li><a href="">Eligibility</a></li>
+                    <li><a href="">Preparation</a></li>
+                    <li><a href="">About Treatment</a></li>
+                    <li><a href="">Post-Treatment Care</a></li>
+                    <li><a href="">Recovery Tips</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Patient Sotries</a></li>
+                </ul>
+
+            </div>
+
+        </main>
+
+        <section class="sectionone">
+            <div class="sectiononecontainer">
+                <div class="sectiononeboxone">
+                    <h1>Treatment Overview</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quisquam excepturi optio eos,
+                        tenetur dolor eligendi odio magni, aut necessitatibus corporis dolore quas? Dolores vitae et
+                        nulla a
+                        aperiam temporibus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non soluta maxime incidunt iusto quas
+                        fuga
+                        accusamus voluptate, maiores dolores ad possimus libero ipsam! Fugiat esse recusandae expedita
+                        dolor, inventore velit.
+                        Est blanditiis quibusdam quos hic beatae dolorem animi, sequi, eveniet libero asperiores
+                        deleniti
+                        nam ipsam sunt veniam nulla soluta corporis necessitatibus quo adipisci totam a delectus! Ex
+                        eaque
+                        rerum quaerat?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quisquam excepturi optio eos,
+                        tenetur dolor eligendi odio magni, aut necessitatibus corporis dolore quas? Dolores vitae et
+                        nulla a
+                        aperiam temporibus.</p>
+                </div>
+                <div class="sectiononeboxtwo">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="Image Loading">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="sectiontwo">
+            <div class="sectiontwocontainer">
+                <div class="sectiontwoboxone">
+                    <div class="sectiontwoboxoneitemone">
+                        <h1>Eligibility For Treatment</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non soluta maxime incidunt iusto
+                            quas
+                            fuga
+                            accusamus voluptate, maiores dolores ad possimus libero ipsam! Fugiat esse recusandae
+                            expedita
+                            dolor, inventore velit.
+                            Est blanditiis quibusdam quos hic beatae dolorem animi, sequi, eveniet libero asperiores
+                            deleniti
+                            nam ipsam sunt veniam nulla soluta corporis necessitatibus quo adipisci totam a delectus! Ex
+                            eaque
+                            rerum quaerat?
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                        </ul>
+                    </div>
+                    <div class="sectiontwoboxoneitemtwo">
+                        <h1>Preparation Before Treatment.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non soluta maxime incidunt iusto
+                            quas
+                            fuga
+                            accusamus voluptate, maiores dolores ad possimus libero ipsam! Fugiat esse recusandae
+                            expedita
+                            dolor, inventore velit.
+                            Est blanditiis quibusdam quos hic beatae dolorem animi, sequi, eveniet libero asperiores
+                            deleniti
+                            nam ipsam sunt veniam nulla soluta corporis necessitatibus quo adipisci totam a delectus! Ex
+                            eaque
+                            rerum quaerat?
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                        </ul>
+                    </div>
+                    <div class="sectiontwoboxoneitemthree">
+                        <h1>About Treatment.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non soluta maxime incidunt iusto
+                            quas
+                            fuga
+                            accusamus voluptate, maiores dolores ad possimus libero ipsam! Fugiat esse recusandae
+                            expedita
+                            dolor, inventore velit.
+                            Est blanditiis quibusdam quos hic beatae dolorem animi, sequi, eveniet libero asperiores
+                            deleniti
+                            nam ipsam sunt veniam nulla soluta corporis necessitatibus quo adipisci totam a delectus! Ex
+                            eaque
+                            rerum quaerat?
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                        </ul>
+                    </div>
+                    <div class="sectiontwoboxoneitemfour">
+                        <h1>Post-Treatment Care Treatment</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non soluta maxime incidunt iusto
+                            quas
+                            fuga
+                            accusamus voluptate, maiores dolores ad possimus libero ipsam! Fugiat esse recusandae
+                            expedita
+                            dolor, inventore velit.
+                            Est blanditiis quibusdam quos hic beatae dolorem animi, sequi, eveniet libero asperiores
+                            deleniti
+                            nam ipsam sunt veniam nulla soluta corporis necessitatibus quo adipisci totam a delectus! Ex
+                            eaque
+                            rerum quaerat?
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                        </ul>
+                    </div>
+                    <div class="sectiontwoboxoneitemfive">
+                        <h1>Treatment Recovery Tips.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non soluta maxime incidunt iusto
+                            quas
+                            fuga
+                            accusamus voluptate, maiores dolores ad possimus libero ipsam! Fugiat esse recusandae
+                            expedita
+                            dolor, inventore velit.
+                            Est blanditiis quibusdam quos hic beatae dolorem animi, sequi, eveniet libero asperiores
+                            deleniti
+                            nam ipsam sunt veniam nulla soluta corporis necessitatibus quo adipisci totam a delectus! Ex
+                            eaque
+                            rerum quaerat?
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi cum nulla natus culpa
+                                dolor perferendis minima et odio quibusdam dolorem, totam est ipsa adipisci vel numquam
+                                enim.</li>
+                        </ul>
+                    </div>
+                    <div class="questionanssection">
+                        <h1>Treatment FAQs.</h1>
+                        <div class="question">
+                            <div class="questionone" id="question1">
+                                <span class="plusicon" id="plusicon"><i class="fa-solid fa-plus"></i></span>
+                                <p>How do i know the clinic I am searching is verified?</p>
+                            </div>
+                            <div class="answerone" id="answer1">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perspiciatis
+                                    odit nisi! Harum, deleniti.</p>
+                            </div>
+                        </div>
+                        <div class="questionTwo">
+                            <div class="questiontwo" id="question2">
+                                <span class="plusicon2" id="plusicon2"><i class="fa-solid fa-plus"></i></span>
+                                <p>I can't travel alone so can some family member or friend of mine acompany me?</p>
+                            </div>
+                            <div class="answertwo" id="answer2">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perspiciatis
+                                    odit nisi! Harum, deleniti.</p>
+                            </div>
+                        </div>
+                        <div class="questionThree">
+                            <div class="questionthree" id="question3">
+                                <span class="plusicon3" id="plusicon3"><i class="fa-solid fa-plus"></i></span>
+                                <p>Can I see my doctor before I decide and what about my post recovery?</p>
+                            </div>
+                            <div class="answerthree" id="answer3">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perspiciatis
+                                    odit nisi! Harum, deleniti.</p>
+                            </div>
+                        </div>
+                        <div class="questionFour">
+                            <div class="questionfour" id="question4">
+                                <span class="plusicon4" id="plusicon4"><i class="fa-solid fa-plus"></i></span>
+                                <p>How do I share my reports and medical cases with the clinic of my choice?</p>
+                            </div>
+                            <div class="answerfour" id="answer4">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perspiciatis
+                                    odit nisi! Harum, deleniti.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectiontwoboxtwo">
+                    <p style="font-size: 2rem;">Need Help?</p>
+                    <p>Just Let us know. We will be happy to assist you</p>
+                    <form>
+                        <input class="formsinput" type="text" placeholder="Full Name">
+                        <input class="formsinput" type="text" placeholder="Email">
+                        <input class="formsinput" type="text" placeholder="Phone Number">
+                        <input class="formsinputs" type="text" placeholder="Describe Your Treatment Requirement">
+                        <input class="formsinputbutton" type="submit" value="Send Enquiry">
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    </div>
+
+    <script src="Server.js"></script>
+</body>
+
+</html>
