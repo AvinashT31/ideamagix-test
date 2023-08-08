@@ -6,21 +6,21 @@ in an engaging and user-friendly manner. Built using HTML5 tags exclusively, thi
 provide an exceptional browsing experience across a variety of devices and screen sizes.
 
 <h1>KEY FEATURES:</h1>
-<strong>Responsive Design:</strong>
+<strong><ul>Responsive Design:</ul></strong>
 ideamagix is meticulously crafted to be fully responsive, ensuring that your website looks and functions seamlessly on all devices, 
 including desktops, tablets, and smartphones. Its flexible layout dynamically adjusts to different screen sizes, making it accessible to a wide range of users.
 
-<strong>Owl Carousel Sliders:</strong>
+<strong><ul>Owl Carousel Sliders:</ul></strong>
 Experience the power of Owl Carousel sliders, which elegantly display your images and content in an interactive and captivating manner. 
 These sliders are strategically integrated into the layout, allowing you to showcase multiple images or messages within a compact space.
 
-<strong>Cross-Browser Compatibility:</strong>
+<strong><ul>Cross-Browser Compatibility:</ul></strong>
 Rest assured, ideamagix has been rigorously tested to function flawlessly on all modern web browsers, including Chrome, Firefox, Opera, and Microsoft Edge. This ensures that your visitors enjoy a consistent and smooth browsing experience, regardless of their browser preferences.
 
-<strong>Dummy Content:</strong>
+<strong><ul>Dummy Content:</ul></strong>
 Incorporating dummy images and content, Stalwart Phoenix gives you a clear visual representation of how your actual content will be presented. This helps you envision the final look of your website and make informed design decisions.
 
-<strong>Mobile-Optimized Menu:</strong>
+<strong><ul>Mobile-Optimized Menu:</ul></strong>
 For users accessing the website on smaller screens, we've implemented a sleek and user-friendly mobile menu. Crafted using pure JavaScript or jQuery, this menu seamlessly collapses and expands, providing easy access to different sections of the website.
 
 <h1>Routes/Links</h1>
