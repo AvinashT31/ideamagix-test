@@ -6,22 +6,23 @@
 
 body {
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 .fullpage {
-    border: 1px solid black;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
 }
 
-/* header */
+
+/* header section */
 
 header {
     /* border: 1px solid black; */
     width: 100%;
     height: 10vh;
     background-color: white;
+    box-sizing: border-box;
 }
 
 .aafiyaheader {
@@ -156,7 +157,16 @@ header {
 }
 
 
-/* navbar */
+/* media responsiveness */
+
+@media screen and (min-width: 460px) and (max-width: 480px) {
+    header {
+        display: none;
+    }
+}
+
+
+/* Navbar section */
 
 nav {
     /* border: 1px solid black; */
@@ -214,15 +224,52 @@ nav {
     margin-left: 5%;
 }
 
-input::placeholder {
-    /* color: white; */
+.place::placeholder {
+    color: white;
+}
+ 
+.hamburger-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px auto;
+}
+
+@media screen and (min-width: 460px) and (max-width: 480px) {
+    .navbarleftside ul {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        width: 12%;
+        height: 7vh;
+    }
+
+    .navbarrightside {
+        width: 40%;
+    }
+
+    .navbarleftside ul.show {
+        display: flex;
+        flex-direction: column;
+        background-color: blueviolet;
+        z-index: 2;
+    }
 }
 
 
-/* bannerpage main */
+
+/* main section banner */
 
 .bannerpage {
-    /* border: 1px solid black; */
     width: 100%;
     height: 50vh;
     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrGbl7FZI_grGjzmzDRhuuIGFL_C1vwdFh3Q&usqp=CAU");
@@ -232,7 +279,6 @@ input::placeholder {
 }
 
 .bannersection {
-    /* border: 1px solid white; */
     width: 50%;
     height: 46vh;
     margin-top: 2vh;
@@ -240,7 +286,6 @@ input::placeholder {
 }
 
 .bannerlist {
-    /* border: 1px solid white; */
     width: 100%;
     height: 5vh;
     margin-top: 4%;
@@ -265,8 +310,7 @@ input::placeholder {
 }
 
 .bannerheading {
-    /* border: 1px solid white; */
-    width: 80%;
+    width: 100%;
     height: 20vh;
     margin-top: 3%;
     color: white;
@@ -278,7 +322,6 @@ input::placeholder {
 }
 
 button {
-    /* border: 1px solid white; */
     width: 20%;
     height: 6vh;
     margin-top: 2%;
@@ -287,12 +330,33 @@ button {
     background-color: #19A8F8;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
-/* articlesection main */
+
+@media screen and (min-width: 460px) and (max-width: 480px) {
+    .bannerlist ul {
+        display: none;
+    }
+
+    .bannerheading h1 {
+        font-size: 20px;
+    }
+
+    .bannerheading p {
+        line-height: 1.5;
+        margin-top: 8%;
+    }
+
+    button {
+        width: 50%;
+        margin-top: 25%;
+    }
+}
+
+/* main section article */
 
 .articlesection {
-    /* border: 1px solid black; */
     width: 100%;
     height: 8vh;
     background-color: white;
@@ -300,10 +364,10 @@ button {
 }
 
 .article {
-    /* border: 1px solid black; */
     width: 80%;
     height: 100%;
     margin-left: 5%;
+    font-size: 13px;
 }
 
 .article ul {
@@ -324,10 +388,20 @@ button {
 }
 
 
-/* sectionone */
+@media screen and (min-width: 460px) and (max-width: 480px) {
+    .article {
+        display: none;
+    }
+
+    .articlesection {
+        display: none;
+    }
+}
+
+
+/* section one */
 
 .sectionone {
-    /* border: 1px solid black; */
     width: 100%;
     height: 85vh;
     background-color: white;
@@ -345,7 +419,6 @@ button {
 }
 
 .sectiononeboxone {
-    /* border: 1px solid black; */
     width: 55%;
     height: 90%;
 }
@@ -358,7 +431,6 @@ button {
 }
 
 .sectiononeboxtwo {
-    /* border: 1px solid black; */
     width: 40%;
     height: 90%;
 }
@@ -369,17 +441,39 @@ button {
 }
 
 
-/* sectiontwo */
+
+@media screen and (min-width: 460px) and (max-width: 480px) {
+    .sectiononeboxtwo {
+        display: none;
+    }
+
+    .sectiononeboxone {
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        bottom: 10%;
+    }
+
+    .sectionone {
+        height: 100vh;
+    }
+
+    .sectiononecontainer {
+        border-bottom: 1px dotted black;
+        height: 83vh;
+    }
+}
+
+
+/* section two */
 
 .sectiontwo {
-    /* border: 1px solid black; */
     width: 100%;
     height: 3500px;
     padding: 1px;
 }
 
 .sectiontwocontainer {
-    /* border: 1px solid black; */
     width: 90%;
     margin: auto;
     height: 3450px;
@@ -389,16 +483,14 @@ button {
 }
 
 .sectiontwoboxone {
-    /* border: 1px solid black; */
     width: 70%;
     height: 3450px;
 }
 
 .sectiontwoboxoneitemone {
-    /* border: 1px solid black; */
     width: 100%;
     height: 430px;
-    border-bottom: 1px dotted black;
+    /* border-bottom: 1px dotted black; */
 }
 
 .sectiontwoboxone p {
@@ -419,7 +511,6 @@ button {
 }
 
 .sectiontwoboxoneitemtwo {
-    /* border: 1px solid black; */
     width: 100%;
     height: 430px;
     border-bottom: 1px dotted black;
@@ -444,7 +535,6 @@ button {
 }
 
 .sectiontwoboxoneitemthree {
-    /* border: 1px solid black; */
     width: 100%;
     height: 430px;
     border-bottom: 1px dotted black;
@@ -469,7 +559,6 @@ button {
 }
 
 .sectiontwoboxoneitemfour {
-    /* border: 1px solid black; */
     width: 100%;
     height: 430px;
     border-bottom: 1px dotted black;
@@ -519,7 +608,6 @@ button {
 }
 
 .questionanssection {
-    /* border: 1px solid black; */
     width: 100%;
     height: 450px;
     margin-top: 5%;
@@ -530,7 +618,6 @@ button {
     border-bottom: 1px dotted black;
     border-top: 1px dotted black;
     width: 100%;
-    height: 50px;
     margin-top: 6%;
     cursor: pointer;
 }
@@ -549,17 +636,14 @@ button {
 }
 
 .answerone {
-    /* border: 1px solid black; */
     padding-left: 5%;
     display: none;
 }
 
 .questionTwo {
-    /* border: 1px solid black; */
     border-bottom: 1px dotted black;
     border-top: 1px dotted black;
     width: 100%;
-    height: 50px;
     margin-top: 3%;
     cursor: pointer;
 }
@@ -578,17 +662,14 @@ button {
 }
 
 .answertwo {
-    /* border: 1px solid black; */
     padding-left: 5%;
     display: none;
 }
 
 .questionThree {
-    /* border: 1px solid black; */
     border-bottom: 1px dotted black;
     border-top: 1px dotted black;
     width: 100%;
-    height: 50px;
     margin-top: 3%;
     cursor: pointer;
 }
@@ -607,15 +688,12 @@ button {
 }
 
 .answerthree {
-    /* border: 1px solid black; */
     padding-left: 5%;
     display: none;
 }
 
 .questionFour {
-    /* border: 1px solid black; */
     width: 100%;
-    height: 50px;
     margin-top: 3%;
     cursor: pointer;
     border-bottom: 1px dotted black;
@@ -636,21 +714,23 @@ button {
 }
 
 .answerfour {
-    /* border: 1px solid black; */
     padding-left: 5%;
     display: none;
 }
 
+.sectionss {
+    width: 25%;
+    height: 3450px;
+}
 
 .sectiontwoboxtwo {
-    /* border: 1px solid black; */
-    width: 25%;
+    width: 100%;
     height: 450px;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    /* position: fixed;
-    top: 50%;
-    left: 70%; */
+    position: sticky;
+    top: 0%;
+    right: 5%;
 }
 
 .sectiontwoboxtwo p {
@@ -685,7 +765,6 @@ form {
 }
 
 .formsinputbutton {
-    /* border: 1px solid black; */
     width: 90%;
     height: 6vh;
     margin-top: 5%;
@@ -698,7 +777,6 @@ form {
 }
 
 .sectiontwocarasaual {
-    /* border: 1px solid black; */
     width: 100%;
     height: auto;
     padding: 20px;
@@ -747,7 +825,6 @@ form {
 }
 
 .carasualheading {
-    /* border: 1px solid black; */
     width: 100%;
     height: 9vh;
 }
@@ -759,7 +836,6 @@ form {
 }
 
 .carasualimage {
-    /* border: 1px solid black; */
     width: 100%;
     height: 30vh;
     margin-top: 4%;
@@ -776,7 +852,6 @@ form {
 }
 
 .carasualbottom {
-    /* border: 1px solid black; */
     width: 100%;
     height: 10vh;
     margin-top: 4%;
@@ -784,7 +859,6 @@ form {
 }
 
 .carasualcircle {
-    /* border: 1px solid black; */
     width: 50px;
     height: 50px;
     border-radius: 25px;
@@ -799,7 +873,6 @@ form {
 }
 
 .carasualcircleinfo {
-    /* border: 1px solid black; */
     width: 40%;
     height: 8vh;
     margin-top: 1vh;
@@ -807,10 +880,117 @@ form {
     text-align: left;
 }
 
-/* sectionthree */
+
+
+@media screen and (min-width: 460px) and (max-width: 480px) {
+    .sectiontwo {
+        /* border: 1px solid black; */
+        height: 1600px;
+    }
+
+    .sectiontwoboxone {
+        width: 100%;
+        height: 1030px;
+        /* border: 1px solid black; */
+    }
+
+    .sectiontwocontainer {
+        /* border: 1px solid black; */
+        flex-direction: column;
+        height: 1530px;
+    }
+
+    .sectiontwoboxoneitemone {
+        display: none;
+    }
+
+    .sectiontwoboxoneitemtwo {
+        display: none;
+    }
+
+    .sectiontwoboxoneitemthree {
+        display: none;
+    }
+
+    .sectiontwoboxoneitemfour {
+        display: none;
+    }
+
+    .sectiontwoboxoneitemfive {
+        display: none;
+    }
+
+    .questionanssection {
+        width: 100%;
+        height: 410px;
+    }
+
+    .sectiontwocarasaual {
+        /* border: 1px solid black; */
+        width: 100%;
+    }
+
+    .carasualcontainer {
+        width: 95%;
+        height: auto;
+        top: 0;
+        margin-top: 3%;
+    }
+
+    .carasualheading p {
+        font-size: 14px;
+    }
+
+    .carasualimage {
+        height: auto;
+        margin-top: 3%;
+    }
+
+    .carasualimage p {
+        font-size: 12px;
+    }
+
+    .carasualbottom {
+        height: auto;
+        margin-top: 3%;
+    }
+
+    .carasualcircle {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+
+    .carasualcircleinfo {
+        width: 100%;
+        height: auto;
+        margin-top: 1vh;
+        margin-left: 4%;
+    }
+
+    .sectionss {
+        width: 100%;
+        height: 2400px;
+        /* border: 1px solid black; */
+    }
+
+    .sectiontwoboxtwo {
+        width: 90%;
+        margin: auto;
+        position: static;
+    }
+
+    .sectiontwoboxtwo p {
+        padding-top: 5%;
+    }
+
+}
+
+/* section three */
 
 .sectionthree {
-    /* border: 1px solid black; */
     width: 100%;
     height: auto;
     padding: 20px;
@@ -870,13 +1050,12 @@ span {
     background-color: #333 !important;
 }
 
-.sectionthreecarasualimage{
-    border: 1px solid black;
+.sectionthreecarasualimage {
     width: 100%;
     height: 40vh;
 }
 
-.sectionthreecarasualimage img{
+.sectionthreecarasualimage img {
     width: 100%;
     height: 100%;
 }
@@ -887,10 +1066,20 @@ span {
 }
 
 
-/* sectionfour */
+@media screen and (min-width: 460px) and (max-width: 480px) {
+    .sectionthree h1 {
+        font-size: 28px;
+    }
+
+    .sectionthreecarasualcontainer {
+        height: 65vh;
+    }
+}
+
+
+/* section four */
 
 .sectionfour {
-    /* border: 1px solid black; */
     width: 100%;
     height: auto;
     padding: 1px;
@@ -948,13 +1137,12 @@ span {
     background-color: #333 !important;
 }
 
-.sectionfourcarasualimage{
-    border: 1px solid black;
+.sectionfourcarasualimage {
     width: 100%;
     height: 48vh;
 }
 
-.sectionfourcarasualimage img{
+.sectionfourcarasualimage img {
     width: 100%;
     height: 100%;
 }
@@ -964,3 +1152,334 @@ span {
     line-height: 1.5;
 }
 
+
+@media screen and (min-width: 460px) and (max-width: 480px) {
+    .sectionfour h1 {
+        font-size: 26px;
+    }
+}
+
+
+/* section five */
+
+.sectionfive {
+    width: 100%;
+    height: 35vh;
+    margin-top: 5%;
+    background-color: #19A8F8;
+    color: white;
+    padding: 1px;
+}
+
+.sectionfive p {
+    text-align: center;
+    margin-top: 3%;
+    font-weight: 550;
+}
+
+.sectionfive h1 {
+    text-align: center;
+    margin-top: 1%;
+    font-size: 2rem;
+}
+
+.sectionfiveone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #19A8F8;
+}
+
+.btn {
+    width: 10%;
+    background-color: blueviolet;
+    border: none;
+    outline: none;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.number {
+    font-size: 1.5rem !important;
+    font-weight: 550 !important;
+    margin-bottom: 1% !important;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 460px) and (max-width: 480px) {
+    .sectionfive p {
+        font-size: 14px;
+    }
+
+    .sectionfive h1 {
+        font-size: 1.5rem;
+        margin-top: 5%;
+    }
+
+    .sectionfiveone {
+        height: 10vh;
+    }
+
+    .btn {
+        position: relative;
+        bottom: 97%;
+        width: 25%;
+    }
+
+    .sectionfive {
+        height: 28vh;
+    }
+}
+
+
+/* footer section */
+
+footer {
+    border: 1px solid black;
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(48, 68, 80);
+    color: white;
+}
+
+.footerpage {
+    width: 90%;
+    margin: auto;
+    height: 80vh;
+    margin-top: 2.5vh;
+}
+
+.footertoppage {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footertoppageone {
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.footertoppageone h4 {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.footertoppageone p {
+    margin-left: 15%;
+    margin-top: 4%;
+}
+
+.footertoppagetwo {
+    width: 23%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.footertoppagetwo h4 {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.footertoppagetwo p {
+    margin-left: 15%;
+    margin-top: 4%;
+}
+
+.footertoppagethree {
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.footertoppagediv {
+    width: 90%;
+    margin: auto;
+    height: 15vh;
+    border-radius: 10px;
+    position: relative;
+    bottom: 15%;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.footertoppagedivone {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    padding-top: 2%;
+}
+
+.footertoppagedivone svg {
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para {
+    margin-left: 3%;
+    color: rgb(30, 43, 71);
+}
+
+.footertoppagedivtwo {
+    width: 100%;
+    height: 7vh;
+}
+
+.footertoppagedivtwo p {
+    margin-left: 2%;
+    font-size: 12px;
+    font-weight: 550;
+    color: gray;
+    line-height: 1.5;
+}
+
+.footertoppagethree {
+    width: 23%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.h4 {
+    margin-left: 10%;
+}
+
+.paragraph {
+    margin-left: 15%;
+    margin-top: 4%;
+}
+
+.footerbottompage {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerbottompageone {
+    width: 30%;
+    height: 100%;
+}
+
+.footerbottompageone img {
+    width: 100%;
+    height: 70%;
+}
+
+.footerbottompagetwo {
+
+    width: 45%;
+    height: 100%;
+}
+
+.footerbottompagetwo h2 {
+    margin-top: 5%;
+}
+
+.footerbottompagetwo p {
+    margin-top: 3%;
+    line-height: 1.5;
+}
+
+.footerbottompagethree {
+    width: 20%;
+    height: 100%;
+}
+
+.footerbottompagethree h2 {
+    margin-top: 13%;
+    margin-left: 5%;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: left;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.socialmedia svg {
+    margin-left: 5%;
+}
+
+.contactnumber {
+    margin-top: 5%;
+    line-height: 1.5;
+    margin-left: 5%;
+}
+
+.contactnumber p {
+    font-weight: 550;
+}
+
+.contact {
+    color: #19A8F8;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 460px) and (max-width: 480px) {
+
+    footer {
+        height: 75vh;
+    }
+
+    .footertoppagediv {
+        display: none;
+    }
+
+    .footerbottompageone {
+        display: none;
+    }
+
+    .footertoppageone h4 {
+        font-size: 11px;
+    }
+
+    .footertoppageone p {
+        font-size: 10px;
+    }
+
+    .footertoppagetwo h4 {
+        font-size: 11px;
+    }
+
+    .footertoppagetwo p {
+        font-size: 10px;
+    }
+
+    .h4 {
+        font-size: 11px;
+        margin-top: 10%;
+    }
+
+    .paragraph {
+        font-size: 10px;
+    }
+
+    .footerbottompage {
+        justify-content: space-evenly;
+    }
+
+    .footerbottompagetwo h2 {
+        font-size: 11px;
+    }
+
+    .footerbottompagetwo p {
+        font-size: 10px;
+    }
+
+    .footerbottompagethree h2 {
+        font-size: 11px;
+    }
+
+    .contactnumber {
+        font-size: 11px;
+    }
+}

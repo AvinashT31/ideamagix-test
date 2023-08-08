@@ -55,5 +55,79 @@ question4.addEventListener('click', () => {
 });
 
 
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const navLinks = document.querySelector('.navbarleftside ul');
+
+hamburgerIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
+
+// Close the navigation links when the window width changes
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 460 && window.innerWidth <= 480) {
+        navLinks.classList.remove('show');
+    }
+});
+
+
+//sectiontwo sectiontwocarasaual
+
+$(document).ready(function () {
+    $(".carasual").owlCarousel({
+        items: 2,
+        // loop: true,
+        // autoplay: true,
+        // autoplayTimeout: 3000,
+        dots: true,
+        margin: 20,
+        responsive: {
+            460: {
+                items: 1 // Change the number of items to 1 for screen widths from 460px and above
+            }
+        }
+    });
+});
+
+
+// section three carasual
+
+$(document).ready(function () {
+    $(".sectionthreecarasual").owlCarousel({
+        items: 3,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        dots: true,
+        margin: 20,
+        responsive: {
+            460: {
+                items: 1
+            },
+            481: {
+                items: 3
+            }
+        }
+    });
+});
+
+
+// section four carasual
+
+$(document).ready(function () {
+    $(".sectionfourcarasual").owlCarousel({
+        items: 3,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        dots: true,
+        margin: 20,
+        responsive: {
+            460: {
+                items: 1 // Change the number of items to 1 for screen widths from 460px and above
+            }
+        }
+    });
+});
+
 
 
